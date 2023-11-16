@@ -1,6 +1,6 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
+import ItemList from "./components/ItemList";
 
 function App() {
   // functions and logic
@@ -13,7 +13,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+      <div class="flex-container">
+        <h1>Hello</h1>
+        <ItemList items={items}/>
+      </div>
     </div>
   );
 }
