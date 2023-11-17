@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import ItemList from "./components/ItemList";
+import CommentList from "./components/CommentList";
 
 function App() {
   // functions and logic
@@ -24,6 +25,7 @@ function App() {
       <div class="flex-container">
         <h1>Hello</h1>
         <ItemList items={items}/>
+        <CommentList comments={comments}/>
       </div>
     </div>
   );
