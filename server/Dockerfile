@@ -7,9 +7,10 @@ WORKDIR /app
 COPY . /app
 RUN npm install
 RUN npm install mongodb
-COPY . .
 
-# RUN npm run seeds
+RUN npm run seeds
+
+COPY . .
 
 EXPOSE 9000
 
